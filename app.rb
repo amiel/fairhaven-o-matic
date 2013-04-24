@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 
-require 'markov_chainer'
+require ROOT.join('markov_chainer').to_s
 
 get '/' do
   mc = MarkovChainer.new(2)
